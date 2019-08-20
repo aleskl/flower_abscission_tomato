@@ -19,7 +19,8 @@ plot(x = 1:length(P),
      xlab = 'time after induction',
      ylab = 'rel. expression',
      ylim = c(min(agg$x), max(agg$x)),
-     xaxt = 'n')
+     xaxt = 'n',
+     main = paste0(cmdArgs[1]))
 lines(x = 1:length(D), y = D, col = 'red')
 axis(side = 1, at = 1:length(P), labels = as.character(unique(df$Time)))
 dev.off()
