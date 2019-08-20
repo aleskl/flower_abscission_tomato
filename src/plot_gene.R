@@ -21,5 +21,5 @@ plot(x = 1:length(P),
      ylim = c(min(agg$x), max(agg$x)),
      xaxt = 'n')
 lines(x = 1:length(D), y = D, col = 'red')
-axis(side = 1, at = 1:length(P), labels = c('0', '2', '4', '6', '8', '10', '12'))
+axis(side = 1, at = 1:length(P), labels = as.character(unique(df$Time)))
 dev.off()
